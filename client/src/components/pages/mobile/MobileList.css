@@ -1,0 +1,21 @@
+.phone-cards{
+    background-color: aqua;
+}
+
+.phone-card{
+    text-align: center;
+}
+.phone-card img{
+    height: 15em;
+    object-fit: contain;
+}
+
+.phone-card .card-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.phone-card .card-button .btn-more{
+    margin-bottom: 0!important;
+}
