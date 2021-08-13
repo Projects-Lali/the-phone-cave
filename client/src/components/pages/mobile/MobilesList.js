@@ -4,7 +4,7 @@ import { Component } from 'react'
 import MobilesService from '../../../services/mobile.service'
 import Spinner from '../../shared/Spinner/Spinner'
 import MobileDetails from './MobileDetails'
-
+import './MobileList.css'
 //import MobileCard from './MobileCard'
 // import * from "../../../media/images"
 
