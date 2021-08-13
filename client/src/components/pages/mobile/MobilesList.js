@@ -51,16 +51,18 @@ class MobilesList extends Component {
 
                                 {this.state.mobiles.map(elm =>
                                     <>
-                                        <Col md={6}>
-                                            <Link className='link-card' to='/' key={elm._id} >
-                                                <Card className='phone-card'>
+                                        <Col md={3}>
+                                            <Card className='phone-card'>
+                                                <div className='img-box'>
                                                     <Card.Img variant="top" src={require(`../../../media/images/${elm.imageFileName}`).default} />
-                                                    <Card.Body>
-                                                        <Card.Title className='title'>{elm.name}</Card.Title>
-                                                        <Button onClick={() => { this.setState({ modal: true }) }} variant="dark" style={{ marginBottom: '20px' }}>Ver más</Button>
-                                                    </Card.Body>
-                                                </Card>
-                                            </Link>
+                                                </div>
+                                                <Card.Body>
+                                                    <h5 className='title'>{elm.name}</h5>
+                                                    <div className='card-button'>
+                                                        <Button className='btn-more' onClick={() => { this.setState({ modal: true }) }}>+</Button>
+                                                    </div>
+                                                </Card.Body>
+                                            </Card>
                                         </Col>
                                         <Modal show={this.state.modal} onHide={() => this.setState({ modal: false })}>
                                             <Modal.Header>

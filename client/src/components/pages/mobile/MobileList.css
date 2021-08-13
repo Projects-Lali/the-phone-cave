@@ -1,19 +1,34 @@
-.phone-cards{
-    background-color: black;
-}
 
-.phone-card{
+.card.phone-card{
     text-align: center;
+    background-color: rgb(37, 35, 35);
+
+}
+.img-box{
+    padding:2em;
 }
 .phone-card img{
-    height: 15em;
+    height: 18em;
     object-fit: contain;
+    background-color: white;
 }
+.phone-card .card-body{
+    padding: 0;
+}
+.phone-card .title{
+    font-size: 2em;
+    color: white;
+}
+.phone-card .card-body .title{
+    text-decoration: none;
+}
+
 
 .phone-card .card-button{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 2em;
 }
 
 .phone-card .card-button .btn-more{
